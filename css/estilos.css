@@ -338,6 +338,11 @@ figure {
   height: inherit;
   flex-wrap: inherit;
 }
+.html-video{
+  max-width: 100%;
+  height: auto;
+  /* max-width: 100%; */
+}
 @media screen and (max-width: 2000px){
 
 }
