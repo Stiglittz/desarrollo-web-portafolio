@@ -167,14 +167,13 @@
     const burgerButton= document.querySelector("#burger-menu");
     console.log(menu);
     console.log(burgerButton);
-    
+
     function validation(event) {
       if (event.matches) {
         burgerButton.addEventListener("click",toggleMenu);
       } else {
         burgerButton.removeEventListener("click",toggleMenu);
       }
-      console.log(event.matches);
     }
     function toggleMenu() {
       if (menu.classList.contains("is-active")) {
@@ -183,6 +182,7 @@
         menu.classList.add("is-active");
       }
     }
+    validation(ipad);
 
   </script>
   
