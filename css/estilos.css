@@ -338,10 +338,22 @@ figure {
   height: inherit;
   flex-wrap: inherit;
 }
-.html-video{
-  max-width: 100%;
-  height: auto;
-  /* max-width: 100%; */
+.flexible-video{
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  /* background: blue; */
+  position: relative;
+}
+.HTML-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%!important;
+  height: 100%!important;
+  z-index: 0;
 }
 @media screen and (max-width: 2000px){
 
@@ -441,6 +453,8 @@ figure {
     /* font-size: 16px; */
     margin: 2em .5em .5em;
     padding: 1em;
+    z-index: 2;
+    position: relative;
   }
   .contact{
     height: auto;
